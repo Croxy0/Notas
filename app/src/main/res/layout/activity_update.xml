@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".UploadActivity">
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/uploadimg"
+            android:id="@+id/uploadImage"
+            android:layout_marginTop="2dp"
+            android:scaleType="fitXY"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadNombre"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Nombre Alumno"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/uploadApellido"
+            android:background="@drawable/lavender_border"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:hint="Apellidos Alumno"
+            android:gravity="start|center_vertical"
+            android:textColor="@color/lavender"/>
+
+
+
+    </LinearLayout>
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/lavender_sinborder"
+        >
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="NOTAS          " />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="               " />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="               " />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ponderación"
+                android:textSize="15dp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/lblmotrar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Nota 1" />
+
+            <EditText
+                android:id="@+id/txtNota1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:gravity="center"
+                android:hint="4.0"
+                android:inputType="number|numberDecimal"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtmostrarp1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="15%" />
+
+            <TextView
+                android:id="@+id/txtponderacion1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="0.6" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/lblmotrar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Nota 2" />
+
+            <EditText
+                android:id="@+id/txtNota2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:gravity="center"
+                android:hint="4.5"
+                android:inputType="number|numberDecimal" />
+
+            <TextView
+                android:id="@+id/txtmostrarp2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="35%" />
+
+            <TextView
+                android:id="@+id/txtponderacion2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="0.6" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblmotrar3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="Nota 3" />
+
+            <EditText
+                android:id="@+id/txtNota3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="4"
+                android:gravity="center"
+                android:hint="4.5"
+                android:inputType="number|numberDecimal" />
+
+            <TextView
+                android:id="@+id/txtmostrarp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="50%" />
+
+            <TextView
+                android:id="@+id/txtponderacion3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="0.6" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/lblespacio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtespacio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lbltotales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="Totales" />
+
+            <TextView
+                android:id="@+id/txtProm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:text="3.7" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/lblespacio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtespacio4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:inputType="text"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/lblestado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:text="Estado" />
+
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Aprobado"
+                android:textSize="15dp" />
+
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Calcular"
+        android:id="@+id/CalcularButton"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius = "20dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Grabar"
+        android:id="@+id/saveButton"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius = "20dp"/>
+
+
+
+</LinearLayout>
