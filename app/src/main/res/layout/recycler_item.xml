@@ -41,7 +41,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:id="@+id/recPriority"
-            android:text="priority"
+            android:text="Lenguaje"
             android:layout_toEndOf="@id/recTitle"
             android:layout_marginTop="20dp"
             android:layout_marginStart="90dp"
@@ -61,5 +61,12 @@
             android:layout_marginStart="20dp"
             android:maxLines="1"
             android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/recLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Language"
+            />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

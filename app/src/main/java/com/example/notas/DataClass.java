@@ -1,18 +1,22 @@
 package com.example.notas;
-
 public class DataClass {
+
     private String dataNombre;
     private String dataApellido;
-    private String dataN1,dataN2,dataN3;
+    private String dataN1, dataN2, dataN3;
     private String DataEstado;
     private String DataPromedio;
     private String DataImage;
     private String Key;
+    private String title;
+    private String desc;
+    private String lang;
+    private String imageUrl;
 
-    public DataClass() {
+    public DataClass(String title, String desc, String lang, String imageURL) {
     }
 
-    public DataClass(String dataNombre, String dataApellido, String dataN1, String dataN2, String dataN3, String dataEstado, String dataPromedio, String dataImage) {
+    public DataClass(String dataNombre, String dataApellido, String dataN1, String dataN2, String dataN3, String dataEstado, String dataPromedio, String dataImage, String dataTitle, String dataDesc, String dataLang) {
         this.dataNombre = dataNombre;
         this.dataApellido = dataApellido;
         this.dataN1 = dataN1;
@@ -21,6 +25,10 @@ public class DataClass {
         DataEstado = dataEstado;
         DataPromedio = dataPromedio;
         DataImage = dataImage;
+        this.title = dataTitle;
+        this.desc = dataDesc;
+        this.lang = dataLang;
+        this.imageUrl = ""; // Inicialización vacía, se puede asignar después si es necesario
     }
 
     public String getDataNombre() {
@@ -67,6 +75,10 @@ public class DataClass {
         return DataEstado;
     }
 
+    public String getDataTitle() {
+        return title;
+    }
+
     public void setDataEstado(String dataEstado) {
         DataEstado = dataEstado;
     }
@@ -94,5 +106,25 @@ public class DataClass {
     public void setKey(String key) {
         Key = key;
     }
+
+    public void setDataTitle(String dataTitle) {
+        this.title = dataTitle;
+    }
+
+    public String getDataDesc() {
+        return desc;
+    }
+
+    public String getDataLang() {
+        return lang;
+    }
+
+    public void setDataDesc(String dataDesc) {
+        this.desc = dataDesc;
+    }
 }
+
+
+
+
 

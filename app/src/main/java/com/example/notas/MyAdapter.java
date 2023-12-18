@@ -8,17 +8,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-
-import java.util.ArrayList;
-import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
+import com.bumptech.glide.Glide;
 
+import java.util.List;
+import java.util.ArrayList;
+
+public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
     private Context context;
     private List<DataClass> dataList;
 
@@ -82,4 +81,3 @@ class MyViewHolder extends RecyclerView.ViewHolder{
         recTitle = itemView.findViewById(R.id.recTitle);
     }
 }
-

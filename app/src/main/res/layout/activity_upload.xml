@@ -28,7 +28,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Upload Data"
+                android:text="Guardar Data"
                 android:textSize="30sp"
                 android:textAlignment="center"
                 android:textColor="@color/lavender"/>
@@ -42,26 +42,28 @@
                 android:scaleType="fitXY"/>
 
             <EditText
+                android:id="@+id/uploadTopic"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/uploadTopic"
-                android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Enter topic name"
+                android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:hint="Ingrese Nombre"
+                android:padding="16dp"
+                android:textColor="@color/lavender"
+                android:textSize="24sp" />
 
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
                 android:id="@+id/uploadDesc"
-                android:background="@drawable/lavender_border"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
                 android:layout_marginTop="20dp"
-                android:padding="16dp"
-                android:hint="Enter description"
+                android:background="@drawable/lavender_border"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:hint="Ingresar Descripcion"
+                android:padding="16dp"
+                android:textColor="@color/lavender"
+                android:textSize="24sp" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
@@ -69,17 +71,21 @@
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Enter language"
+                android:hint="Ingrese Lenguaje"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/lavender"
+                android:textSize="24sp"/>
+
             <Button
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:text="Save"
                 android:id="@+id/saveButton"
-                android:textSize="18sp"
+                android:layout_width="332dp"
+                android:layout_height="55dp"
                 android:layout_marginTop="20dp"
-                app:cornerRadius = "20dp"/>
+                android:text="Actualizar"
+                android:textColor="#DCD9D9"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:padding="8dp"/>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

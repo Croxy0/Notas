@@ -1,4 +1,5 @@
 package com.example.notas;
+
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
@@ -34,7 +35,7 @@ public class UploadActivity extends AppCompatActivity {
     ImageView uploadImage;
     Button saveButton;
     EditText uploadTopic, uploadDesc, uploadLang;
-    String imageURL;
+    String imageUrl;
     Uri uri;
 
     @Override
@@ -99,7 +100,7 @@ public class UploadActivity extends AppCompatActivity {
                 Task<Uri> uriTask = taskSnapshot.getStorage().getDownloadUrl();
                 while (!uriTask.isComplete());
                 Uri urlImage = uriTask.getResult();
-                imageURL = urlImage.toString();
+                imageUrl = urlImage.toString();
                 uploadData();
                 dialog.dismiss();
             }
@@ -117,7 +118,7 @@ public class UploadActivity extends AppCompatActivity {
         String desc = uploadDesc.getText().toString();
         String lang = uploadLang.getText().toString();
 
-        DataClass dataClass = new DataClass(title, desc, lang, imageURL);
+        DataClass dataClass = new DataClass(title, desc, lang, imageUrl);
 
         //Estamos cambiando el título a la fecha actual,
         // porque también actualizaremos el título y puede afectar el valor.
@@ -141,5 +142,3 @@ public class UploadActivity extends AppCompatActivity {
                 });
     }
 }
-
-

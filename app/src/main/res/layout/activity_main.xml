@@ -32,16 +32,15 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="68dp"
-        android:layout_height="57dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginRight="43dp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="40dp"
         android:backgroundTint="@color/lavender"
         android:src="@drawable/ic_baseline_add_24"
         app:tint="@color/white" />
